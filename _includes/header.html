@@ -1,0 +1,43 @@
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid d-flex align-items-center justify-content-center">
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="/"{% if page.nav == 'home' %} class="active"{% endif %}>Home</a></li>
+        <li class="dropdown"><a href="#"><span>Pictures</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+            <li class="dropdown"><a href="#"><span>CANADA</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="{% if page.nav == 'canada' %}{% else %}/canada.html{% endif %}">British Columbia</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>EUROPE</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="{% if page.nav == 'austria' %}{% else %}/austria.html{% endif %}">Austria</a></li>
+                <li><a href="{% if page.nav == 'denmark' %}{% else %}/denmark.html{% endif %}">Denmark</a></li>
+                <li><a href="{% if page.nav == 'france' %}{% else %}/france.html{% endif %}">France</a></li>
+                <li><a href="{% if page.nav == 'germany' %}{% else %}/germany.html{% endif %}">Germany</a></li>
+                <li><a href="{% if page.nav == 'ireland' %}{% else %}/ireland.html{% endif %}">Ireland</a></li>
+                <li><a href="{% if page.nav == 'italy' %}{% else %}/italy.html{% endif %}">Italy</a></li>
+                <li><a href="{% if page.nav == 'poland' %}{% else %}/poland.html{% endif %}">Poland</a></li>
+                <li><a href="{% if page.nav == 'scotland' %}{% else %}/scotland.html{% endif %}">Scotland</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>USA</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="{% if page.nav == 'catalina' %}{% else %}/catalina.html{% endif %}">Catalina Island, CA</a></li>
+                <li><a href="{% if page.nav == 'colorado' %}{% else %}/colorado.html{% endif %}">Breckenridge, CO</a></li>
+                <li><a href="{% if page.nav == 'kauai' %}{% else %}/kauai.html{% endif %}">Kauai, HI</a></li>
+                <li><a href="{% if page.nav == 'mutau' %}{% else %}/mutau.html{% endif %}">Mutau, CA</a></li>
+              </ul>
+            </li>
+            <li><a href="{% if page.nav == 'golf' %}{% else %}/golf.html{% endif %}"><span>GOLF PICS</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav><!-- .navbar -->
+
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+  </div>
+</header><!-- End Header -->
