@@ -5,9 +5,14 @@
         <li><a href="/"{% if page.nav == 'home' %} class="active"{% endif %}>Home</a></li>
         <li class="dropdown"><a href="#"><span>Pictures</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
-            <li class="dropdown"><a href="#"><span>CANADA</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <li class="dropdown"><a href="#"><span>NORTH AMERICA</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
               <ul>
                 <li><a href="{% if page.nav == 'canada' %}{% else %}/canada.html{% endif %}">British Columbia</a></li>
+                <li><a href="{% if page.nav == 'catalina' %}{% else %}/catalina.html{% endif %}">Catalina Island, CA</a></li>
+                <li><a href="{% if page.nav == 'colorado' %}{% else %}/colorado.html{% endif %}">Breckenridge, CO</a></li>
+                <li><a href="{% if page.nav == 'rmnp' %}{% else %}/rmnp.html{% endif %}">Rocky Mountain National Park, CO</a></li>
+                <li><a href="{% if page.nav == 'kauai' %}{% else %}/kauai.html{% endif %}">Kauai, HI</a></li>
+                <li><a href="{% if page.nav == 'mutau' %}{% else %}/mutau.html{% endif %}">Mutau, CA</a></li>
               </ul>
             </li>
             <li class="dropdown"><a href="#"><span>EUROPE</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -22,13 +27,9 @@
                 <li><a href="{% if page.nav == 'scotland' %}{% else %}/scotland.html{% endif %}">Scotland</a></li>
               </ul>
             </li>
-            <li class="dropdown"><a href="#"><span>USA</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <li class="dropdown"><a href="#"><span>OCEANIA</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
               <ul>
-                <li><a href="{% if page.nav == 'catalina' %}{% else %}/catalina.html{% endif %}">Catalina Island, CA</a></li>
-                <li><a href="{% if page.nav == 'colorado' %}{% else %}/colorado.html{% endif %}">Breckenridge, CO</a></li>
-                <li><a href="{% if page.nav == 'rmnp' %}{% else %}/rmnp.html{% endif %}">Rocky Mountain National Park, CO</a></li>
-                <li><a href="{% if page.nav == 'kauai' %}{% else %}/kauai.html{% endif %}">Kauai, HI</a></li>
-                <li><a href="{% if page.nav == 'mutau' %}{% else %}/mutau.html{% endif %}">Mutau, CA</a></li>
+                <li><a href="{% if page.nav == 'fiji' %}{% else %}/fiji.html{% endif %}">Vanua Levu, Fiji</a></li>
               </ul>
             </li>
             <li><a href="{% if page.nav == 'golf' %}{% else %}/golf.html{% endif %}"><span>GOLF PICS</span></a></li>
